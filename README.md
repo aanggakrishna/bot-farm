@@ -1,16 +1,25 @@
-# Discord Message Monitor Client
+# Discord Monitoring Bot
 
-Client Discord sederhana yang dapat memantau aktivitas pesan dan pengguna secara real-time dari thread/sub-channel dalam sebuah channel menggunakan akun user.
+A simple Discord bot that can monitor message and user activity in a specific thread/channel in real-time.
 
-## Persyaratan
-- Python 3.8 atau lebih baru
-- Package yang diperlukan ada di `requirements.txt`
+## Features
+- Monitors all activity in a specified thread:
+  - New messages sent
+  - Edited messages
+  - Deleted messages
+- Monitors server-wide activity:
+  - Users joining the server
+  - Users leaving the server
+- Logs user details (name, discriminator, and ID).
+- Logs any attachments sent.
+- Creates a new, timestamped log file for each session.
+- Displays clean, real-time logs in the console.
+- Includes a `!fetch_history` command to save a thread's message history to a file.
 
-## Cara Setup
+## Requirements
+- Python 3.8 or newer
+- Required packages are listed in `requirements.txt`
 
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
 ```
 
 2. Konfigurasi client:
